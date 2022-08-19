@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "../components/Home";
+import { Page404 } from "../components/Page404";
 import { Page1Routes } from "./Page1Routes";
 import { Page2Routes } from "./Page2Routes";
 
@@ -25,6 +26,7 @@ export const Router = () => {
           />
         ))}
       </Route>
+      <Route path="*" element={<Page404 />} />
     </Routes>
   );
 };
