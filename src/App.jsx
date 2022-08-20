@@ -1,18 +1,11 @@
-import { BrowserRouter, Link } from "react-router-dom";
-import { Router } from "./router/Router";
+import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
+import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Link to="/">Home</Link>
-        <br />
-        <Link to="/page1">Page1</Link>
-        <br />
-        <Link to="/page2">Page2</Link>
-        <br />
-      </div>
-      <Router />
-    </BrowserRouter>
+    <>
+      <PrimaryButton children="1" />
+      <SecondaryButton children="二番手" />
+    </>
   );
 }
